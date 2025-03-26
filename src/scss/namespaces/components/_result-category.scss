@@ -1,0 +1,38 @@
+.c-result__category {
+  align-items: center;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem 1.6rem;
+
+  &[data-category='Reaction'] {
+    background: var(--red-95);
+    color: var(--red);
+  }
+
+  &[data-category='Memory'] {
+    background: var(--yellow-95);
+    color: var(--yellow);
+  }
+
+  &[data-category='Verbal'] {
+    background: var(--green-95);
+    color: var(--green);
+  }
+
+  &[data-category='Visual'] {
+    background: var(--blue-95);
+    color: var(--blue);
+  }
+
+  &-name {
+    align-items: center;
+    display: flex;
+    gap: 1.2rem;
+
+    & img {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use '../../functions' as f;
+
+.c-button {
+  background: transparent;
+  border: none;
+  border-radius: 12.8rem;
+  cursor: pointer;
+  padding: 1.7rem 0rem;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+
+  @include f.breakpoint('large') {
+    padding: 1.7rem 12rem;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::before {
+    background: var(--dark-navy);
+    border-radius: 12.8rem;
+    content: '';
+    height: 100%;
+    left: 0rem;
+    opacity: 1;
+    position: absolute;
+    top: 0rem;
+    transition: opacity 450ms ease;
+    width: 100%;
+    will-change: opacity;
+    z-index: -1;
+  }
+
+  &::after {
+    background: var(--gradient-1);
+    border-radius: 12.8rem;
+    content: '';
+    height: 100%;
+    left: 0rem;
+    opacity: 0;
+    position: absolute;
+    top: 0rem;
+    transition: opacity 450ms ease;
+    width: 100%;
+    will-change: opacity;
+    z-index: -1;
+  }
+}

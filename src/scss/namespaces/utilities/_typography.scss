@@ -1,0 +1,43 @@
+@use '../../functions' as f;
+
+.u-text-heading-xl {
+  font-size: 5.6rem;
+  letter-spacing: 0rem;
+  line-height: 7.2rem;
+
+  @include f.breakpoint('medium') {
+    font-size: 7.2rem;
+  }
+}
+
+.u-text-heading-l {
+  font-size: 2.4rem;
+  letter-spacing: 0rem;
+
+  @include f.breakpoint('medium') {
+    font-size: 3.2rem;
+  }
+}
+
+.u-text-heading-m {
+  font-size: 1.8rem;
+  letter-spacing: 0rem;
+
+  @include f.breakpoint('medium') {
+    font-size: 2.4rem;
+  }
+}
+
+.u-text-body {
+  font-size: 1.6rem;
+  letter-spacing: 0rem;
+
+  @include f.breakpoint('medium') {
+    font-size: 1.8rem;
+  }
+}
+
+.u-text-button {
+  font-size: 1.8rem;
+  letter-spacing: 0rem;
+}

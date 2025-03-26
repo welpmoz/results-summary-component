@@ -1,0 +1,40 @@
+@use '../../functions' as f;
+
+.l-result {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+
+    @include f.breakpoint('medium') {
+      background-color: var(--very-light-blue);
+      padding: 5vw 0rem;
+    }
+
+    @include f.breakpoint('large') {
+      align-items: center;
+      padding: 10vw 0rem;
+    }
+  }
+
+  &__achievement {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    @include f.breakpoint('medium') {
+      gap: 1.4rem;
+    }
+  }
+
+  &__score {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @include f.breakpoint('medium') {
+      gap: 2.8rem;
+    }
+  }
+}
